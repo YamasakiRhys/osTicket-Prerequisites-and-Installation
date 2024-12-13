@@ -20,14 +20,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - <b>PHP manager for IIS</b> - ensures PHP is correctly configured to run IIS
 - <b>Rewrite module </b> - facilitates URL rewriting and redirect users to URLs
 - <b>VC_redist.x86</b> (redistributable) - osTicket relies on libraries that are part of Microsoft Visual C++ and ensures the program runs smoothly
-- <b>MySQL</b> - for storing data into databases
-- <b>HeidiSQL</b> - interface for accessing MySQL 
+- <b>MySQL</b> - a database to store our data
+- <b>HeidiSQL</b> - an interface for accessing MySQL 
 
 
 <h2>Installation Steps</h2>
 <p>
-Once the Windows 10 VM has been set up in Azure, log into the machine with your credentials. It is best to create a notepad and save a copy of any credentials used along the way for this lab, as there'll be many.
-Within the VM, open the Microsoft Edge web browser and download <a href= https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD>osTicket-Installation-Files.zip</a>. Extract the files and you should see the following.
+Once the Windows 10 VM has been set up in Azure, log into the machine with your credentials. 
+Within the VM, open the Microsoft Edge web browser and download <a href= https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD>osTicket-Installation-Files.zip</a>. Extract the files and you should see the following:
 
 </p>
 <br />
