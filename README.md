@@ -7,7 +7,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure (Virtual Machines)
 - Remote Desktop
 - Internet Information Services (IIS)
 
@@ -38,7 +38,7 @@ Within the VM, open the Microsoft Edge web browser and download <a href= https:/
 
 
 <p>
-Now we'll need to enable Internet Information Services. You can search for Control Panel in the search bar at the bottom, then click Uninstall a Program, then Turn Windows features on or off, then check the box next to Internet Information Services. We'll also need to enable CGI under World Wide Wide Services -> Application Development Features.
+Now we'll need to enable Internet Information Services. You can search for Control Panel in the search bar at the bottom, then click Uninstall a Program, then Turn Windows features on or off, then check the box next to Internet Information Services (IIS). We'll also need to enable CGI under World Wide Wide Services -> Application Development Features.
 </p>
 <br />
 
@@ -47,7 +47,8 @@ Now we'll need to enable Internet Information Services. You can search for Contr
 </p>
 <br/>
 <p>
-Once that's done, we can install the PHP manager for IIS. Open on the file and click OK to all the default selections. Do the same thing for the rewrite modules (rewrite_amd64 file).
+Next, we can install the PHP manager for IIS. 
+Open on the file and click OK to all the default selections. Do the same thing for the rewrite modules (rewrite_amd64 file).
 </p>
 <img src="https://i.imgur.com/Uh4Zwlj.png" height="80%" width="80%" alt="install php manager and rewrite"/>
 
@@ -118,7 +119,7 @@ Now we have to rename C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php t
 </p>
 <br/>
 <p>
-Now back to osTicket on the browser, click Continue and fill in the details that you want to use as login and password for the helpdesk system. The only caveat is the MySQL database name is osTicket and the username and password must be root and root. Before clicking continue on this, go back to the original extracted folder and install HeidiSQL. Accept all defaults and when it comes to creating a new session, select new and then login into the sql database with root and root credentials. Then right click on Unnamed -> Create new -> Database. The name must be exactly osTicket.
+Now back to osTicket on the browser, click Continue and fill in the details that you want to use as login and password for the helpdesk system. The only caveat is the MySQL database name is osTicket and the username and password must be root and root. Before clicking continue on this, go back to the original extracted folder and install HeidiSQL. Accept all defaults and when it comes to creating a new session, select new and then login into the sql database with root and root credentials. Then right click on Unnamed -> Create new -> Database. The name must be exactly the same name that you named the MySQL database.
 </p>
 <p>
   <img src="https://i.imgur.com/Lfw0PXJ.png" height="80%" width="80%" alt="heidisql"/>
